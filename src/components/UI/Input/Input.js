@@ -21,8 +21,8 @@ const Input = React.forwardRef((props, ref) => {
         props.isValid === false ? classes.invalid : ""
       }`}
     >
-      <label htmlFor="props.id">{props.label}</label>
-      <Input
+      <label htmlFor={props.id}>{props.label}</label>
+      <input
         ref={inputRef}
         type={props.type}
         id={props.id}
